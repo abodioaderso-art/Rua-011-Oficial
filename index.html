@@ -1,0 +1,518 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RUA 011 — Sneakers e streetwear</title>
+<meta name="description" content="Loja de sneakers e streetwear: drops semanais, entrega rápida, troca grátis e site acessível." />
+
+<link rel="icon" type="image/png" href="img/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>FRETE GRÁTIS ACIMA DE R$399 • TROCA GRÁTIS EM 30 DIAS • ATÉ 12X SEM JUROS • DROP NOVO TODA QUINTA •</span>
+    <span>FRETE GRÁTIS ACIMA DE R$399 • TROCA GRÁTIS EM 30 DIAS • ATÉ 12X SEM JUROS • DROP NOVO TODA QUINTA •</span>
+  </div>
+</div>
+
+<p class="sr-only">Frete grátis acima de R$399, troca grátis em 30 dias, até 12x sem juros e drop novo toda quinta.</p>
+
+<header class="header">
+  <div class="container header__inner">
+
+    <button class="icon-btn header__burger" id="burger" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav">
+      <span aria-hidden="true">☰</span>
+    </button>
+
+    <a class="logo" href="#top">
+      <span class="sr-only">RUA 011 — ir para o início</span>
+      <span aria-hidden="true">RUA<span>011</span></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <a href="#novidades">Novidades</a>
+      <a href="#catalogo">Sneakers</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#empresa">A empresa</a>
+      <a href="#ofertas">Ofertas</a>
+    </nav>
+
+    <div class="header__actions">
+
+      <form class="search-form" role="search" onsubmit="event.preventDefault()">
+        <label class="sr-only" for="search">Buscar produtos por nome, marca ou cor</label>
+        <input id="search" class="search" type="search" placeholder="Buscar tênis..." autocomplete="off" aria-describedby="search-help" />
+        <span id="search-help" class="sr-only">Os resultados são atualizados enquanto você digita.</span>
+      </form>
+
+      <button class="icon-btn" id="a11y-btn" aria-label="Opções de acessibilidade" aria-expanded="false" aria-controls="a11y-panel" title="Acessibilidade">
+        <span aria-hidden="true">♿</span>
+      </button>
+
+      <button class="icon-btn" id="account-btn" aria-haspopup="dialog" aria-expanded="false" aria-controls="auth-modal" title="Conta">
+        <span aria-hidden="true">👤</span>
+        <span class="sr-only" id="account-label">Entrar ou criar conta</span>
+      </button>
+
+      <button class="icon-btn" id="fav-btn" aria-expanded="false" aria-controls="favoritos" title="Favoritos">
+        <span aria-hidden="true">♡</span>
+        <span class="badge" id="fav-count" aria-hidden="true">0</span>
+        <span class="sr-only" id="fav-btn-label">Ver favoritos, 0 itens</span>
+      </button>
+
+      <button class="icon-btn" id="cart-btn" aria-expanded="false" aria-controls="drawer">
+        <span aria-hidden="true">🛍</span>
+        <span class="badge" id="cart-count" aria-hidden="true">0</span>
+        <span class="sr-only" id="cart-btn-label">Abrir sacola, 0 itens</span>
+      </button>
+
+    </div>
+  </div>
+
+  <div class="a11y-panel" id="a11y-panel" role="region" aria-label="Opções de acessibilidade" hidden>
+    <div class="container a11y-panel__inner">
+
+      <h2 class="a11y-panel__title">Acessibilidade</h2>
+
+      <div class="a11y-panel__grid">
+        <button type="button" class="a11y-toggle" data-a11y="contrast" aria-pressed="false">Alto contraste</button>
+        <button type="button" class="a11y-toggle" data-a11y="bigtext" aria-pressed="false">Aumentar texto</button>
+        <button type="button" class="a11y-toggle" data-a11y="dyslexia" aria-pressed="false">Fonte legível</button>
+        <button type="button" class="a11y-toggle" data-a11y="links" aria-pressed="false">Destacar links</button>
+        <button type="button" class="a11y-toggle" data-a11y="motion" aria-pressed="false">Reduzir animações</button>
+        <button type="button" class="a11y-toggle" data-a11y="spacing" aria-pressed="false">Espaçar leitura</button>
+        <button type="button" class="a11y-reset" id="a11y-reset">Restaurar padrão</button>
+      </div>
+
+      <p class="a11y-panel__note">
+        Suas preferências ficam salvas neste navegador. Navegue também pelo teclado: Tab, Shift+Tab, Enter e Esc.
+      </p>
+
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <div id="top"></div>
+
+  <h1 class="sr-only">RUA 011 — loja de sneakers e streetwear</h1>
+
+  <section class="hero" aria-labelledby="hero-title">
+
+    <img src="img/hero.jpg" alt="Pessoa usando look streetwear e sneakers brancos em cenário urbano" />
+
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="container hero__content">
+
+      <p class="eyebrow">Coleção 2026</p>
+
+      <p class="hero__title" id="hero-title">
+        SEU PRÓXIMO<br />PAR FAVORITO
+      </p>
+
+      <p class="hero__text">
+        Sneakers selecionados, drops semanais e entrega rápida para todo o Brasil.
+      </p>
+
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#catalogo">Comprar agora</a>
+        <a class="btn btn--ghost" href="#ofertas">Ver ofertas</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="categorias" aria-labelledby="cat-title">
+    <div class="container">
+
+      <p class="eyebrow">Navegue por</p>
+      <h2 class="section__title" id="cat-title">Categorias</h2>
+
+      <ul class="cats" id="cats"></ul>
+
+    </div>
+  </section>
+
+  <section class="section" id="novidades" aria-labelledby="dest-title">
+    <div class="container">
+
+      <div class="section__head">
+
+        <div>
+          <p class="eyebrow">Mais desejados</p>
+          <h2 class="section__title" id="dest-title">Destaques da semana</h2>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtrar produtos por tipo">
+          <button class="chip is-active" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="chip" data-filter="Tendência" aria-pressed="false">Tendência</button>
+          <button class="chip" data-filter="Lançamento" aria-pressed="false">Lançamentos</button>
+          <button class="chip" data-filter="Oferta" aria-pressed="false">Ofertas</button>
+        </div>
+
+      </div>
+
+      <p class="sr-only" id="results-status" role="status" aria-live="polite"></p>
+
+      <ul class="grid" id="catalogo"></ul>
+
+      <p class="empty" id="empty" hidden>Nenhum produto encontrado.</p>
+
+    </div>
+  </section>
+
+  <section class="section" id="favoritos" aria-labelledby="fav-title">
+    <div class="container">
+
+      <p class="eyebrow">Sua lista</p>
+      <h2 class="section__title" id="fav-title">Favoritos</h2>
+
+      <ul class="grid" id="fav-grid"></ul>
+
+      <p class="empty" id="fav-empty">
+        Você ainda não favoritou nenhum par. Use o coração nos produtos.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="section video" id="empresa" aria-labelledby="video-title">
+    <div class="container">
+
+      <p class="eyebrow">Institucional</p>
+
+      <h2 class="section__title" id="video-title">
+        Conheça a nossa empresa
+      </h2>
+
+      <p class="video__text">
+        Somos uma loja de sneakers e streetwear com curadoria própria, feita para todo mundo — inclusive quem navega por teclado ou leitor de tela.
+      </p>
+
+      <div class="video__frame video__frame--placeholder" role="img" aria-label="Espaço reservado para o vídeo institucional da RUA 011">
+
+        <span class="video__play" aria-hidden="true">▶</span>
+        <span>Vídeo institucional em breve</span>
+
+      </div>
+
+      <p class="video__note">
+        Espaço reservado para o vídeo institucional. Recomendamos publicar também legendas e uma transcrição.
+      </p>
+
+      <details class="video__transcript">
+        <summary>Ler transcrição do vídeo</summary>
+        <p>
+          Apresentação da loja: história, seleção de produtos, processo de entrega e compromisso com acessibilidade digital.
+        </p>
+      </details>
+
+    </div>
+  </section>
+
+  <section class="drop" id="ofertas" aria-labelledby="drop-title">
+
+    <img src="img/drop.jpg" alt="Sneaker cano alto iluminado por luz vermelha sobre fundo escuro" />
+
+    <div class="drop__overlay" aria-hidden="true"></div>
+
+    <div class="container drop__content">
+
+      <p class="eyebrow">Drop da semana</p>
+
+      <h2 id="drop-title">
+        ATÉ 40% OFF<br />EM PARES SELECIONADOS
+      </h2>
+
+      <p class="drop__text">
+        Use o cupom <strong>RUA10</strong> e ganhe 10% extra no checkout.
+      </p>
+
+      <a class="btn btn--primary" href="#novidades">Aproveitar ofertas</a>
+
+    </div>
+  </section>
+ 
+
+  <section class="section perks" aria-labelledby="perks-title">
+    <div class="container">
+
+      <h2 class="sr-only" id="perks-title">Vantagens da loja</h2>
+
+      <ul class="perks__grid">
+
+        <li>
+          <h3>Entrega rápida</h3>
+          <p>Envio em até 24h para todo o Brasil.</p>
+        </li>
+
+        <li>
+          <h3>Troca grátis</h3>
+          <p>30 dias para trocar o tamanho.</p>
+        </li>
+
+        <li>
+          <h3>Pagamento seguro</h3>
+          <p>Pix, boleto e até 12x sem juros.</p>
+        </li>
+
+        <li>
+          <h3>Compra acessível</h3>
+          <p>Site navegável por teclado e leitor de tela.</p>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+
+
+</section>
+
+<!-- LOCALIZAÇÃO RUA 011 -->
+
+<section class="localizacao" id="localizacao">
+
+  <div class="container localizacao__grid">
+
+    <div class="localizacao__info">
+
+      <span class="localizacao__tag">
+        RUA 011 — NOSSA LOCALIZAÇÃO
+      </span>
+
+      <h2>Encontre a gente.</h2>
+
+      <p>
+        Quer conhecer nossa loja? Confira nossa localização
+        e trace sua rota pelo Google Maps.
+      </p>
+
+      <div class="localizacao__endereco">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Rua Campante, 410</span>
+      </div>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Rua+Campante+410+Sao+Paulo+SP"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="localizacao__btn">
+        COMO CHEGAR
+      </a>
+
+    </div>
+
+    <div class="localizacao__mapa">
+
+      <iframe
+        src="https://maps.google.com/maps?q=Rua%20Campante%2C%20410%2C%20S%C3%A3o%20Paulo%20SP&z=16&output=embed"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Localização da RUA 011">
+      </iframe>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER ORIGINAL RUA 011 -->
+
+<footer class="footer">
+  <div class="container footer__grid">
+
+    <div>
+      <a class="logo logo--footer" href="#top">
+        <span class="sr-only">RUA 011 — ir para o início</span>
+        <span aria-hidden="true">RUA<span>011</span></span>
+      </a>
+
+      <p>Sneakers e streetwear com curadoria. Loja fictícia para demonstração.</p>
+    </div>
+
+    <nav aria-label="Institucional">
+      <h2 class="footer__title">Institucional</h2>
+      <a href="#empresa">Sobre</a>
+      <a href="#">Trocas e devoluções</a>
+      <a href="#">Política de privacidade</a>
+      <a href="#">Declaração de acessibilidade</a>
+    </nav>
+
+    <nav aria-label="Ajuda">
+      <h2 class="footer__title">Ajuda</h2>
+      <a href="#">Central de atendimento</a>
+      <a href="#">Guia de tamanhos</a>
+      <a href="#">Rastrear pedido</a>
+    </nav>
+
+    <div>
+      <h2 class="footer__title">Newsletter</h2>
+
+      <form class="news" id="news-form">
+
+        <label class="sr-only" for="news-email">
+          Seu e-mail para receber novidades
+        </label>
+
+        <input id="news-email" type="email" required placeholder="seu@email.com" />
+
+        <button class="btn btn--primary" type="submit">Assinar</button>
+
+        <p class="news__status" id="news-status" role="status" aria-live="polite"></p>
+
+      </form>
+    </div>
+
+  </div>
+
+  <div class="container footer__bottom">
+    © 2026 RUA 011. Todos os direitos reservados.
+  </div>
+</footer>
+
+
+<div class="overlay" id="overlay" hidden></div>
+
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" aria-hidden="true">
+
+  <div class="drawer__head">
+    <h2 class="drawer__title" id="drawer-title">Sua sacola</h2>
+
+    <button class="icon-btn" id="drawer-close" aria-label="Fechar sacola">
+      <span aria-hidden="true">✕</span>
+    </button>
+  </div>
+
+  <div class="drawer__body" id="cart-items"></div>
+
+  <div class="drawer__foot">
+
+    <div class="row">
+      <span>Total</span>
+      <strong id="cart-total">R$ 0,00</strong>
+    </div>
+
+    <button class="btn btn--primary btn--block" id="checkout">
+      Finalizar compra
+    </button>
+
+  </div>
+</aside>
+
+</section>
+<div class="modal" id="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title" hidden>
+
+  <div class="modal__card">
+
+    <div class="modal__head">
+
+      <h2 class="modal__title" id="auth-title">Entrar na sua conta</h2>
+
+      <button class="icon-btn" id="auth-close" aria-label="Fechar janela de conta">
+        <span aria-hidden="true">✕</span>
+      </button>
+
+    </div>
+
+    <div id="auth-logged-out">
+
+      <div class="tabs" role="tablist" aria-label="Entrar ou cadastrar">
+
+        <button class="tab is-active" id="tab-login" role="tab" aria-selected="true" aria-controls="panel-login">
+          Entrar
+        </button>
+
+        <button class="tab" id="tab-signup" role="tab" aria-selected="false" aria-controls="panel-signup">
+          Criar conta
+        </button>
+
+      </div>
+
+      <form class="form" id="panel-login" role="tabpanel" aria-labelledby="tab-login">
+
+        <label for="login-email">E-mail</label>
+        <input id="login-email" name="email" type="email" autocomplete="email" required />
+
+        <label for="login-pass">Senha</label>
+        <input id="login-pass" name="password" type="password" autocomplete="current-password" required minlength="6" />
+
+        <button class="btn btn--primary btn--block" type="submit">
+          Entrar
+        </button>
+
+      </form>
+
+      <form class="form" id="panel-signup" role="tabpanel" aria-labelledby="tab-signup" hidden>
+
+        <label for="su-name">Nome completo</label>
+        <input id="su-name" name="name" type="text" autocomplete="name" required />
+
+        <label for="su-email">E-mail</label>
+        <input id="su-email" name="email" type="email" autocomplete="email" required />
+
+        <label for="su-pass">Senha (mínimo 6 caracteres)</label>
+        <input id="su-pass" name="password" type="password" autocomplete="new-password" required minlength="6" />
+
+        <button class="btn btn--primary btn--block" type="submit">
+          Criar conta
+        </button>
+
+      </form>
+
+      <p class="form__note">
+        Os dados ficam salvos apenas neste navegador (demonstração).
+      </p>
+
+    </div>
+
+    <div id="auth-logged-in" hidden>
+
+      <p class="auth__hello" id="auth-hello"></p>
+
+      <p class="form__note">
+        Seus favoritos ficam salvos na sua conta neste navegador.
+      </p>
+
+      <button class="btn btn--ghost btn--block" id="logout-btn" type="button">
+        Sair da conta
+      </button>
+
+    </div>
+
+    <p class="form__error" id="auth-error" role="alert"></p>
+
+  </div>
+</div>
+
+<p class="sr-only" id="live-region" role="status" aria-live="polite"></p>
+
+<script src="script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase.js"></script>
+  <script src="catalogo.js"></script>
+  <script src="auth.js"></script>
+  <script src="favoritos.js"></script>
+  <script src="sacola.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

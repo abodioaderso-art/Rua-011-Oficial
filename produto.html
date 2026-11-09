@@ -1,0 +1,82 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produto | RUA 011</title>
+
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html">
+      RUA<span>011</span>
+    </a>
+
+    <a class="btn btn--primary" href="index.html">
+      Voltar à loja
+    </a>
+  </div>
+</header>
+
+<main class="container product-page">
+
+  <p class="product-breadcrumb">
+    <a href="index.html">Início</a> / Sneakers / Produto
+  </p>
+
+  <div class="product-layout">
+
+    <div class="product-photo">
+      <img id="product-image" src="" alt="">
+    </div>
+
+    <section class="product-info">
+
+      <p class="eyebrow" id="product-brand">RUA 011</p>
+
+      <h1 class="product-title" id="product-name">
+        Carregando produto...
+      </h1>
+
+      <p class="product-price" id="product-price"></p>
+      <p class="product-installments" id="product-installments"></p>
+
+      <div class="product-option">
+        <h2>Escolha a cor</h2>
+        <div class="product-options" id="product-colors"></div>
+      </div>
+
+      <div class="product-option">
+        <h2>Escolha o tamanho</h2>
+        <div class="product-options product-size-grid" id="product-sizes"></div>
+      </div>
+
+      <button class="btn btn--primary product-add" id="add-product">
+        ADICIONAR À SACOLA
+      </button>
+
+      <p class="product-message" id="product-message"></p>
+
+      <a class="product-back" href="index.html#novidades">
+        ← Continuar comprando
+      </a>
+
+    </section>
+
+  </div>
+</main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase.js"></script>
+  <script src="auth.js"></script>
+  <script src="favoritos.js"></script>
+  <script src="sacola.js"></script>
+  <script src="produto.js"></script>
+</body>
+</html>
+
