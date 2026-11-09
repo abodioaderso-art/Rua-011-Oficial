@@ -2,8 +2,8 @@
 // Conexão com o Supabase + funções compartilhadas entre index.html e produto.html.
 // Carregue este arquivo ANTES de script.js e produto.js.
 
-const SUPABASE_URL = 'https://SEU-PROJETO.supabase.co';
-const SUPABASE_ANON_KEY = 'SUA_CHAVE_ANON_PUBLICA';
+const SUPABASE_URL = 'https://bbfopyotajojhhsmiseh.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_XyylCuobinMEAir0XKOxSg_mcyc3UnO   ';
 
 const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
